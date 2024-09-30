@@ -1,0 +1,13 @@
+@page "/"
+@inject SettingsForm settingsForm;
+
+<h5>this is index page</h5>
+
+<button @onclick="OpenSettings">open settings</button>
+
+@code{
+    void OpenSettings()
+    {
+        settingsForm.Show();
+    }
+}
